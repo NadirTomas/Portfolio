@@ -64,5 +64,3 @@ btnDescargar.addEventListener('click', function() {
     // Simula un clic en el enlace
         a.click();
 });
-
-
