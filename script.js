@@ -48,19 +48,21 @@ window.onscroll = function(){
 // generar descarga de cv
         
     //Obtén una referencia al botón
-    var btnDescargar = document.getElementById('descargarPdf');
+var btnDescargar = document.getElementById('descargarPdf');
 
-        // Agrega un evento clic al botón
-    btnDescargar.addEventListener('click', function() {
+    // Agrega un evento clic al botón
+btnDescargar.addEventListener('click', function() {
     
-            // URL del archivo PDF que deseas descargar
-       var pdfUrl = 'Fotos/CV_Tomas_Nadir.pdf';
+    // URL del archivo PDF que deseas descargar
+    var pdfUrl = 'Fotos/CV_Tomas_Nadir.pdf';
         
-            // Crea un elemento <a> para simular un clic en un enlace
-        var a = document.createElement('a');
-        a.href = pdfUrl;
-        a.download = 'CV_Tomas_Nadir.pdf'; // Nombre con el que se descargará el archivo
+    // Crea un elemento <a> para simular un clic en un enlace
+    var a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = 'CV_Tomas_Nadir.pdf'; // Nombre con el que se descargará el archivo
 
-            // Simula un clic en el enlace
-         a.click();
-    });
+    // Simula un clic en el enlace
+        a.click();
+});
+
+

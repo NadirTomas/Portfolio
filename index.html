@@ -361,15 +361,20 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tu Nombre">
-                    <input type="text" placeholder="Numero de Telefono">
-                    <input type="text" placeholder="Direccion de Correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje <i class="fa-sharp fa-solid fa-paper-plane"></i> 
-                        <span class="overlay"></span>
+                    <form action="https://formsubmit.co/70dc6d00dade9211a37ba0e97068e1fd" method="POST">
+                    <input type="text" placeholder="Tu Nombre" name="nombre"> 
+                    <input type="text" placeholder="Numero de Telefono" name="telefono"> 
+                    <input type="text" placeholder="Direccion de Correo" name="email"> 
+                    <input type="text" placeholder="Tema" name="tema">
+                    <textarea name="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button id="enviar">
+                      Enviar Mensaje <i class="fa-sharp fa-solid fa-paper-plane"></i> 
+                      <span class="overlay"></span>
                     </button>
+                    <!-- Sacar la validacion -->
+                    <input type="hidden" name="_next" value="https://nadirtomas.netlify.app/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
