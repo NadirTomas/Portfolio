@@ -722,6 +722,8 @@ html {
     margin-right: 20px;
 }
 
+
+
 footer{
     background-color: #252a2e;
     color: #fff;
@@ -747,6 +749,10 @@ footer .redes a{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+}
+
+footer .redes a:hover{
+    background-color: #1CB698;
 }
 
 footer .arriba{
