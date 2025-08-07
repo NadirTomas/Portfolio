@@ -23,18 +23,24 @@ function efectoHabilidades() {
 
 window.addEventListener("scroll", efectoHabilidades);
 
-document.addEventListener("DOMContentLoaded", () => {
-    const btnDescargar = document.getElementById('descargarPdf');
-    if (btnDescargar) {
-        btnDescargar.addEventListener('click', () => {
-            const a = document.createElement('a');
-            a.href = 'https://nadirtomas.netlify.app/Fotos/CV_Tomas_Nadir.pdf';
-            a.download = 'CV_Tomas_Nadir.pdf';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        });
-    }
+// generar descarga de cv
+        
+    //Obtén una referencia al botón
+var btnDescargar = document.getElementById('descargarPdf');
+
+    // Agrega un evento clic al botón
+btnDescargar.addEventListener('click', function() {
+    
+    // URL del archivo PDF que deseas descargar
+    var pdfUrl = 'Fotos/CV_Tomas_Nadir.pdf';
+        
+    // Crea un elemento <a> para simular un clic en un enlace
+    var a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = 'CV_Tomas_Nadir.pdf'; // Nombre con el que se descargará el archivo
+
+    // Simula un clic en el enlace
+        a.click();
 });
 
 
