@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portafolio Nadir Tomas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nadir Tomas - Desarrollador Fullstack</title>
+    <meta name="description" content="Portfolio de Nadir Tomás, desarrollador fullstack especializado en React, Django y soluciones web innovadoras.">
+    <meta name="keywords" content="Nadir Tomas, desarrollador fullstack, React, Django, portfolio, programación">
+    <meta property="og:title" content="Portfolio | Nadir Tomás">
+    <meta property="og:description" content="Desarrollador Fullstack especializado en React, Django y soluciones web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nadirtomas.netlify.app">
+    <meta property="og:image" content="Fotos/fondo.jpg">
     <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <!-- Menu Encabezado -->
+    <!-- Header -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Nadir</a>
+                <a href="#inicio">Nadir Tomas</a>
             </div>
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-                    <li><a href="#sobreMi" onclick="seleccionar()">Sobre Mi</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#sobreMi" onclick="seleccionar()">Sobre mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Currículum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
@@ -34,393 +39,278 @@
             </div>
         </header>
     </div>
+
     <!-- Inicio -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="/Fotos/Dios.jpg" alt="">
-            </div>
-            <h1>NADIR TOMAS</h1>
-            <h2>Desarrollador JR - Estudiante Analista en sistemas</h2>
+            <img src="Fotos/perfil.jpg" alt="Foto de Nadir Tomás">
+            <h1>Nadir Tomás</h1>
+            <h2>Desarrollador Fullstack</h2>
             <div class="redes">
-                <a href="https://www.facebook.com/nadir.tomas" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/nadir-tomas-955142221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/NadirTomas" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/nadir.tomas" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/nadir-tomas-955142221/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/NadirTomas" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
-    <!-- Sobre Mi -->
+
+    <!-- Sobre mí -->
     <section id="sobreMi" class="sobreMi">
         <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, Soy Nadir Tomas</span>, un entusiasta que está dando sus primeros pasos en el emocionante mundo de la tecnología. Mi experiencia laboral previa abarca desde la cocina hasta la administración y las ventas, y ahora estoy emocionado por mi nueva aventura en Vates, una destacada empresa de desarrollo de software, donde me desempeño como trainee/junior en el equipo. <br>
-                <br>
-                A pesar de mi nivel inicial, estoy comprometido con aprender y crecer en este campo. Mi perseverancia y actitud proactiva me motivan a enfrentar desafíos con determinación y a buscar constantemente oportunidades para mejorar. La solidaridad y la comunicación son habilidades que valoro, ya que me ayudan a colaborar eficazmente en equipos diversos y a aprender de mis colegas más experimentados. <br>
-                <br>
-                En Vates, tengo la oportunidad de trabajar junto a profesionales talentosos que me inspiran a seguir desarrollándome y aportando al mundo de la tecnología. Mi objetivo es seguir aprendiendo y contribuir al desarrollo de soluciones tecnológicas innovadoras mientras avanzo en mi carrera como trainee/junior. <br>
-                <br>
-                Agradezco que visites mi portafolio y espero con entusiasmo las oportunidades de crecimiento y los desafíos que este apasionante campo tiene reservados para mí.</p>
+            <h2>Sobre mí</h2>
+                <p>
+                    <span>Hola, soy Nadir Tomas.</span> Desarrollador Fullstack con más de 3 años de experiencia creando soluciones web modernas y eficientes. 
+                    Especializado en <strong>React</strong>, <strong>Django</strong> y <strong>Python</strong>, me apasiona transformar ideas en aplicaciones funcionales, intuitivas y escalables.
+                </p>
+                <p>
+                    A lo largo de mi carrera he trabajado en entornos <strong>Agile/SCRUM</strong>, desarrollando desde 
+                    <em>interfaces de usuario atractivas</em> hasta <em>APIs robustas</em> que optimizan procesos internos.
+                    Disfruto aprender nuevas tecnologías y aplicar las mejores prácticas de desarrollo para ofrecer productos de calidad.
+                </p>
+                <p>
+                    Me considero una persona <strong>proactiva, adaptable y orientada a resultados</strong>. 
+                    Busco siempre el equilibrio entre el detalle técnico y la experiencia del usuario final.
+                </p>
+                <p>
+                    Actualmente, mi objetivo es seguir creciendo profesionalmente, colaborar en proyectos innovadores y aportar valor a través de la tecnología.
+                </p>
             <div class="fila">
-                <!-- Datos Personales -->
                 <div class="col">
                     <h3>Datos Personales</h3>
                     <ul>
-                        <li><strong>Cumpleaños</strong></li>
-                        06-07-1999
-                    </ul>
-                    <ul>
-                        <li><strong>Telefono</strong></li>
-                        351-5455935
-                    </ul>
-                    <ul>
-                        <li><strong>Email</strong></li>
-                        Nadirtomas22@gmail.com
-                    </ul>
-                    <ul>
-                        <li><strong>Direccion</strong></li>
-                        Jose Ignacio Thames 5224, Cordoba, Argentina
+                        <li><strong>Cumpleaños</strong> 06-07-1999</li>
+                        <li><strong>Teléfono</strong> 351-5455935</li>
+                        <li><strong>Email</strong> Nadirtomas22@gmail.com</li>
+                        <li><strong>Dirección</strong> José Ignacio Thames 5224, Córdoba, Argentina</li>
                     </ul>
                 </div>
-                <!-- Intereses -->
                 <div class="col">
-                    <h3>intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-volleyball"></i>
-                            <span>DEPORTES</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-podcast"></i>
-                            <span>PODCASTS</span>
-                        </div>
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Juegos</span>
                     </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>Música</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>Viajar</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-volleyball"></i>
+                        <span>Deportes</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-podcast"></i>
+                        <span>Podcasts</span>
+                    </div>
+                </div>
                 </div>
             </div>
             <button id="descargarPdf">
-                Descargar CV <i class="fa-solid fa-circle-down"></i>
+                Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
         </div>
     </section>
-    <!-- Skills -->
-    <section class="skills" id="skills">
+
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
         <div class="contenido-seccion">
             <h2>Skills</h2>
-            <div class="fila">
-                <!-- Skills tecnicas -->
-                <div class="col">
-                    <h3>Technical skills</h3>
-                    <div class="skill">
-                        <span>Javascript / Node</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>65%</span>
-                            </div>
-                        </div>
+            <div class="skills-container">
+                
+                <!-- Frontend -->
+                <div class="skills-col">
+                    <h3>Frontend Developer</h3>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-angular"></i>
+                        <span>Angular</span>
+                        <small>Básico</small>
                     </div>
-                    <div class="skill">
-                        <span>HTML5 / CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>89%</span>
-                            </div>
-                        </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS</span>
+                        <small>Intermedio</small>
                     </div>
-                    <div class="skill">
+                    <div class="skill-item">
+                        <i class="fa-brands fa-js"></i>
+                        <span>JavaScript</span>
+                        <small>Intermedio</small>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-react"></i>
                         <span>React</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
+                        <small>Intermedio</small>
                     </div>
-                    <div class="skill">
-                        <span>C#</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL / Oracle</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skills Profesionales -->
-                <div class="col">
-                    <h3>Profesional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicacion</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>91%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>84%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Proactividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Adaptacion</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>96%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Solidario</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Perseverancia</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>68%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Curriculum -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educacion</h3>
-                    <div class="item izq">
-                        <h4>Analista en sistemas</h4>
-                        <span class="casa">Institución Cervantes</span>
-                        <span class="fecha">2021 - Actual</span>
-                        <p>Actualmente estoy estudiando en la universidad privada Cervantes en Cordoba capital, en la
-                            cual estoy realizando
-                            el ultimo año de la carrera Analista en Sistemas</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Desarrollador Fullstack web</h4>
-                        <span class="casa">Alura cursos y Oracle</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p>Investigando como ser mejor desarrollador y con algo de suerte en la seleccion fui becado
-                            para realizar mi primera bootcamp, de HTML 5, CSS y Javascript, aprovechando esta
-                            oportunidad al maximo.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Desarrollador de Videojuegos</h4>
-                        <span class="casa">Quark Academy</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p>Quark Academy es un proceso en el cual te enseñan a ser desarrollador de videojuegos, en el
-                            cual me incribi por curiosidad y por aprender un poco mas de los mundos que me apasionan.
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML</span>
+                        <small>Avanzado</small>
                     </div>
                 </div>
 
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Gente Amiga Distribuidora</h4>
-                        <span class="casa">Gente Amiga</span>
-                        <span class="fecha">2021 - 2022</span>
-                        <p>Gente Amiga fue mi ultimo trabajo en el cual llegue al puesto de encargado de local, en el
-                            cual decidi dar un paso al costado para enfocarme al 100% en mis estudios y en la carrera a
-                            la que me quiero dedicar.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
+                <!-- Backend -->
+                <div class="skills-col">
+                    <h3>Backend Developer</h3>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-node-js"></i>
+                        <span>Node.js</span>
+                        <small>Básico</small>
                     </div>
-                    <div class="item der">
-                        <h4>Soluciones inmobiliarias</h4>
-                        <span class="casa">Soluciones inmobiliarias</span>
-                        <span class="fecha">2018 - 2019</span>
-                        <p>Este Fue mi primer trabajo, donde realize actividades administrativas cubriendo diversos
-                            periodos vacacionales, en el cual aplique mi bachillerato en contabilidad.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-code"></i>
+                        <span>C++</span>
+                        <small>Básico</small>
                     </div>
-                    <div class="item der">
-                        <h4>Vates</h4>
-                        <span class="casa">vates</span>
-                        <span class="fecha">2023 - Actual</span>
-                        <p> Actualmente me encuentro trabajando en la empresa Vates como pasante,
-                            desarrollando para la universidad Siglo XXl con lenguajes como: Java, React, SQL, AWS, Gitlab.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-database"></i>
+                        <span>MySQL</span>
+                        <small>Intermedio</small>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-java"></i>
+                        <span>Java</span>
+                        <small>Intermedio</small>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                        <small>Avanzado</small>
+                    </div>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="skills-col">
+                    <h3>Herramientas & Otros</h3>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-aws"></i>
+                        <span>AWS</span>
+                        <small>Básico</small>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-fire"></i>
+                        <span>Firebase</span>
+                        <small>Básico</small>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <span>Git</span>
+                        <small>Intermedio</small>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
+
+    <!-- Currículum -->
+    <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <a href="https://pelis-f.vercel.app/" target="_blank">
-                        <img src="Fotos/p1.png" alt="">
-                        <div class="overlay">
-                            <h3>PelisF</h3>
-                            <p>React</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://github.com/NadirTomas/Crud-.Net" target="_blank">
-                        <img src="Fotos/p2.jpg" alt="">
-                        <div class="overlay">
-                            <h3>CRUD</h3>
-                            <p>C# + ASP.NET</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://enlace3.com" target="_blank">
-                        <img src="Fotos/p3.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Drinks</h3>
-                            <p>React</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://github.com/NadirTomas/Municipalidad2.0" target="_blank">
-                        <img src="Fotos/p4.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Municipalidad 2.0</h3>
-                            <p>Java</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- <div class="proyecto">
-                    <a href="https://enlace5.com" target="_blank">
-                        <img src="Fotos/p5.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Diseño Creativo</h3>
-                            <p>Fotografia</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://enlace6.com" target="_blank">
-                        <img src="Fotos/p6.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Diseño Creativo</h3>
-                            <p>Fotografia</p>
-                        </div>
-                    </a>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <!-- Contacto -->
-    <section class="contacto" id="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
+            <h2>Currículum</h2>
             <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <form action="https://formsubmit.co/70dc6d00dade9211a37ba0e97068e1fd" method="POST">
-                    <input type="text" placeholder="Tu Nombre" name="nombre"> 
-                    <input type="text" placeholder="Numero de Telefono" name="telefono"> 
-                    <input type="text" placeholder="Direccion de Correo" name="email"> 
-                    <input type="text" placeholder="Tema" name="tema">
-                    <textarea name="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button id="enviar">
-                      Enviar Mensaje <i class="fa-sharp fa-solid fa-paper-plane"></i> 
-                      <span class="overlay"></span>
-                    </button>
-                    <!-- Sacar la validacion -->
-                    <input type="hidden" name="_next" value="https://nadirtomas.netlify.app/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
+                <!-- Columna izquierda -->
+                <div class="col izquierda">
+                    <h3>Experiencia</h3>
+
+                    <div class="item izq">
+                        <h4>Desarrollador Fullstack</h4>
+                        <span class="casa">Porta Hermanos S.A.</span>
+                        <span class="fecha">Agosto 2024 – Julio 2025</span>
+                        <p>Desarrollé aplicaciones internas con Python y Django, y creé interfaces modernas en React. Integré APIs REST y colaboré con equipos de diseño y usuarios internos para optimizar flujos de trabajo.</p>
+                        <div class="conectori"><div class="circuloi"></div></div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Desarrollador Junior</h4>
+                        <span class="casa">EPAM Systems (ex Vates)</span>
+                        <span class="fecha">Marzo 2023 – Agosto 2024</span>
+                        <p>Desarrollé y mantuve aplicaciones internas para Siglo XXI utilizando Springboot. Participé en equipos Agile bajo metodología SCRUM, optimizando rendimiento y resolviendo incidencias críticas.</p>
+                        <div class="conectori"><div class="circuloi"></div></div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Encargado de Local</h4>
+                        <span class="casa">Gente Amiga Distribuidora</span>
+                        <span class="fecha">2021 – 2022</span>
+                        <p>Gestioné operaciones del local, atención al cliente y control de stock. Coordiné tareas del equipo de ventas y aseguré el cumplimiento de objetivos comerciales.</p>
+                        <div class="conectori"><div class="circuloi"></div></div>
+                    </div>
                 </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.9727763374754!2d-64.12038758456164!3d-31.44241640465838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bce220b47311%3A0x2ac66d410da386fa!2sJos%C3%A9%20Ignacio%20Thames%205224%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1674675692749!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Jose Ignacio Thames 5224, Cordoba, Argentina 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                                Llama: 0351-5455395
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: Nadirtomas22@gmail.com
-                            </li>
-                        </ul>
+
+                <!-- Columna derecha -->
+                <div class="col derecha">
+                    <h3>Educación</h3>
+
+                    <div class="item der">
+                        <h4>Analista en Sistemas (Tesis en curso)</h4>
+                        <span class="casa">Instituto Cervantes</span>
+                        <div class="conectord"><div class="circulod"></div></div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Tecnicatura en Programación</h4>
+                        <span class="casa">Universidad Tecnológica Nacional (UTN)</span>
+                        <span class="fecha">2019</span>
+                        <div class="conectord"><div class="circulod"></div></div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Bachiller en Economía y Gestión de las Organizaciones</h4>
+                        <span class="casa">Instituto San Agustín</span>
+                        <span class="fecha">2017</span>
+                        <div class="conectord"><div class="circulod"></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer-->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Mis Proyectos</h2>
+            <div class="galeria"></div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+
+            <!-- Mensaje de éxito -->
+            <div id="mensaje-exito" style="display:none; margin-bottom:20px; color:#1cb698; font-size:18px; font-weight:bold;">
+                ¡Gracias por contactarme! Te responderé pronto.
+            </div>
+
+            <!-- Formulario con ID para el JS -->
+            <form id="form-contacto" action="https://formsubmit.co/70dc6d00dade9211a37ba0e97068e1fd" method="POST" class="form-contacto">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="tel" name="telefono" placeholder="Número de Teléfono">
+                <input type="email" name="correo" placeholder="Dirección de Correo" required>
+                <input type="text" name="tema" placeholder="Tema">
+                <textarea name="mensaje" placeholder="Tu Mensaje" rows="6" required></textarea>
+
+                <!-- Configuración FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <button type="submit">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
+        <a href="#inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a>
         <div class="redes">
             <a href="https://www.facebook.com/nadir.tomas" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/nadir-tomas-955142221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/NadirTomas" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
@@ -428,5 +318,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>

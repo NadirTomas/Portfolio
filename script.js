@@ -1,66 +1,93 @@
-let menuVisible = false
+// =====================
+// CÓDIGO EXISTENTE
+// =====================
+let menuVisible = false;
 
-// Funcion ocultar y mostrar menu
-
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList = "";
-        menuVisible = false;
-    } else {
-        document.getElementById("nav").classList = "responsive";
-        menuVisible = true;
-    }
+function mostrarOcultarMenu() {
+    document.getElementById("nav").classList.toggle("responsive");
+    menuVisible = !menuVisible;
 }
 
-function seleccionar(){
-    //oculto el menu cuando selecciono una opcion
-    document.getElementById("nav").classList = "";
+function seleccionar() {
+    document.getElementById("nav").classList.remove("responsive");
     menuVisible = false;
 }
 
-//Animacion a las barras
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if (distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("html");
-        habilidades[2].classList.add("css");
-        habilidades[3].classList.add("csharp");
-        habilidades[4].classList.add("sql");
-        habilidades[5].classList.add("vb");
-        habilidades[6].classList.add("comunicacion");
-        habilidades[7].classList.add("trabajoenequipo");
-        habilidades[8].classList.add("proactividad");
-        habilidades[9].classList.add("adaptacion");
-        habilidades[10].classList.add("solidario");
-        habilidades[11].classList.add("perseverancia");
-
+function efectoHabilidades() {
+    const skills = document.getElementById("skills");
+    const distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+    if (distancia_skills >= 300) {
+        document.querySelectorAll(".progreso").forEach(el => el.classList.add(el.dataset.skill));
     }
 }
 
-// detectar scrolling
-window.onscroll = function(){
-    efectoHabilidades();
+window.addEventListener("scroll", efectoHabilidades);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btnDescargar = document.getElementById('descargarPdf');
+    if (btnDescargar) {
+        btnDescargar.addEventListener('click', () => {
+            const a = document.createElement('a');
+            a.href = 'https://nadirtomas.netlify.app/Fotos/CV_Tomas_Nadir.pdf';
+            a.download = 'CV_Tomas_Nadir.pdf';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+    }
+});
+
+
+async function cargarProyectos() {
+    try {
+        const response = await fetch('projects.json');
+        const proyectos = await response.json();
+        const galeria = document.querySelector('.portfolio .galeria');
+        galeria.innerHTML = '';
+        proyectos.forEach(p => {
+            const card = document.createElement('div');
+            card.classList.add('proyecto');
+            card.innerHTML = `
+                <img src="${p.image}" alt="${p.title}">
+                <div class="overlay">
+                    <h3>${p.title}</h3>
+                    <p>${p.description}</p>
+                    <a href="${p.link}" target="_blank">Ver Proyecto</a>
+                </div>
+            `;
+            galeria.appendChild(card);
+        });
+    } catch (error) {
+        console.error("Error cargando proyectos:", error);
+    }
 }
 
-// generar descarga de cv
-        
-    //Obtén una referencia al botón
-var btnDescargar = document.getElementById('descargarPdf');
+// =====================
+// NUEVO CÓDIGO PARA FORMULARIO
+// =====================
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("form-contacto");
+    if (form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault(); // Evita recarga
+            const data = new FormData(form);
 
-    // Agrega un evento clic al botón
-btnDescargar.addEventListener('click', function() {
-    
-    // URL del archivo PDF que deseas descargar
-    var pdfUrl = 'Fotos/CV_Tomas_Nadir.pdf';
-        
-    // Crea un elemento <a> para simular un clic en un enlace
-    var a = document.createElement('a');
-    a.href = pdfUrl;
-    a.download = 'CV_Tomas_Nadir.pdf'; // Nombre con el que se descargará el archivo
-
-    // Simula un clic en el enlace
-        a.click();
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    form.reset();
+                    const mensaje = document.getElementById("mensaje-exito");
+                    if (mensaje) {
+                        mensaje.style.display = "block";
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                }
+            }).catch(() => {
+                alert("Ocurrió un error al enviar el mensaje.");
+            });
+        });
+    }
 });

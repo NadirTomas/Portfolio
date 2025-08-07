@@ -1,0 +1,26 @@
+[
+    {
+        "title": "PelisF",
+        "image": "Fotos/p1.png",
+        "description": "Aplicación web de películas desarrollada en React.",
+        "link": "https://pelis-f.vercel.app/"
+    },
+    {
+        "title": "CRUD .NET",
+        "image": "Fotos/p2.jpg",
+        "description": "CRUD desarrollado en C# y ASP.NET.",
+        "link": "https://github.com/NadirTomas/Crud-.Net"
+    },
+    {
+        "title": "Drinks",
+        "image": "Fotos/p3.jpg",
+        "description": "Aplicación de bebidas desarrollada en React.",
+        "link": "https://enlace3.com"
+    },
+    {
+        "title": "Municipalidad 2.0",
+        "image": "Fotos/p4.jpg",
+        "description": "Sistema de gestión municipal desarrollado en Java.",
+        "link": "https://github.com/NadirTomas/Municipalidad2.0"
+    }
+]
